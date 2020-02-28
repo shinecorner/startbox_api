@@ -1,0 +1,32 @@
+description: Pin login fields
+required: true
+content:
+  application/x-www-form-urlencoded:
+    schema:
+      type: object
+      properties:
+        title:
+          type: string
+          minLength: 5
+          maxLength: 64
+          example: 'A procedure title'
+        description:
+          type: string
+          minLength: 5
+          maxLength: 64
+          example: 'A procedure description'
+        script:
+          type: string
+          example: 'I am a script'
+        laterality:
+          type: integer
+          enum: [0,1,2]
+        patient_id:
+          type: integer
+          example: 1
+        provider_id:
+          type: integer
+          example: 1
+        location_id:
+          type: integer
+          example: 1

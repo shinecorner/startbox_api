@@ -1,0 +1,7 @@
+name: term
+in: query
+required: false
+description: 'A search term to query against'
+example: 'Jane Doe'
+schema:
+  type: string

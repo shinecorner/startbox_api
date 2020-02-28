@@ -1,0 +1,17 @@
+description: Create a status update
+tags:
+  - Procedures
+parameters:
+  - $ref: ../../../index.yaml#/components/parameters/Id
+requestBody:
+  $ref: ../../../index.yaml#/components/requestBodies/ProcedureStatus
+responses:
+  200:
+    description: An activity object
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            data:
+              $ref: ../../../index.yaml#/components/schemas/Activity

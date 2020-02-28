@@ -1,0 +1,22 @@
+description: Scan & retrieve a patient
+tags:
+  - Patients
+requestBody:
+  content:
+    application/x-www-form-urlencoded:
+      schema:
+        type: object
+        properties:
+          image:
+            type: string
+            format: binary
+responses:
+  200:
+    description: A patient object
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            data:
+              $ref: ../../../index.yaml#/components/schemas/Patient

@@ -1,0 +1,38 @@
+ActivityList:
+  $ref: ./schemas/activity-list.yaml
+Activity:
+  $ref: ./schemas/activity.yaml
+FacilityList:
+  $ref: ./schemas/facility-list.yaml
+Facility:
+  $ref: ./schemas/facility.yaml
+LocationList:
+  $ref: ./schemas/location-list.yaml
+Location:
+  $ref: ./schemas/location.yaml
+NoGo:
+  $ref: ./schemas/no-go.yaml
+PatientList:
+  $ref: ./schemas/patient-list.yaml
+Patient:
+  $ref: ./schemas/patient.yaml
+ProcedureList:
+  $ref: ./schemas/procedure-list.yaml
+Procedure:
+  $ref: ./schemas/procedure.yaml
+ProviderList:
+  $ref: ./schemas/provider-list.yaml
+Provider:
+  $ref: ./schemas/provider.yaml
+Recording:
+  $ref: ./schemas/recording.yaml
+ScanPair:
+  $ref: ./schemas/scan-pair.yaml
+Script:
+  $ref: ./schemas/script.yaml
+StatusList:
+  $ref: ./schemas/status-list.yaml
+Status:
+  $ref: ./schemas/status.yaml
+User:
+  $ref: ./schemas/user.yaml

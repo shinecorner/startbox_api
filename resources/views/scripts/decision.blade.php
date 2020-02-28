@@ -1,0 +1,1 @@
+Lorem {{ $patient->full_name }} and {{ $laterality }}

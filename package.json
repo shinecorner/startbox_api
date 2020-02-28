@@ -1,0 +1,7 @@
+{
+    "private": true,
+    "scripts": {
+        "spec": "swagger-cli bundle ./spec/index.yaml --outfile='./spec.json' && swagger-cli validate ./spec.json"
+    },
+    "devDependencies": {}
+}

@@ -1,0 +1,5 @@
+type: object
+properties:
+  content:
+    type: string
+    example: 'These are words to read outloud'

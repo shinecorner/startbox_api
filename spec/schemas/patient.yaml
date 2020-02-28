@@ -1,0 +1,30 @@
+type: object
+properties:
+  id:
+    type: integer
+    format: int64
+    example: 1
+  first_name:
+    type: string
+    minLength: 3
+    maxLength: 20
+    example: 'Jane'
+  last_name:
+    type: string
+    minLength: 3
+    maxLength: 20
+    example: 'Doe'
+  dob:
+    type: string
+    example: '10/12/1988'
+  sex:
+    type: string
+    example: male
+    enum: [male,female,other]
+  dod_identifier:
+    type: integer
+    example: 123456789
+  created_at:
+    type: string
+    format: date-time
+    example: '2020-02-02 00:00:00'

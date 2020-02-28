@@ -1,0 +1,17 @@
+description: Update a no-go
+tags:
+  - No-gos
+parameters:
+  - $ref: ../../index.yaml#/components/parameters/Id
+requestBody:
+  $ref: ../../index.yaml#/components/requestBodies/NoGo
+responses:
+  200:
+    description: A no-go object
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            data:
+              $ref: ../../index.yaml#/components/schemas/NoGo

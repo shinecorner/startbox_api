@@ -1,0 +1,8 @@
+description: Remove armband pairing
+tags:
+  - Scan / Pair
+parameters:
+  - $ref: ../../../index.yaml#/components/parameters/Id
+responses:
+  200:
+    $ref: ../../../index.yaml#/components/responses/Success

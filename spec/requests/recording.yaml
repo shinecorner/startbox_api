@@ -1,0 +1,30 @@
+description: Recording Fields
+required: true
+content:
+  application/x-www-form-urlencoded:
+    schema:
+      type: object
+      properties:
+        patient_id:
+          type: integer
+          example: 1
+        provider_id:
+          type: integer
+          example: 1
+        type:
+          type: string
+          enum: ['timeout','signout','decision']
+        path:
+          type: string
+          example: 's3.eu-west-1.amazonaws.com/some/file.mp4'
+        script:
+          type: string
+          example: 'I am the script'
+        started_at:
+          type: string
+          format: date-time
+          example: '2020-02-02 00:00:00'
+        ended_at:
+          type: string
+          format: date-time
+          example: '2020-02-02 00:00:30'

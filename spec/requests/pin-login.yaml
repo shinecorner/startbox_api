@@ -1,0 +1,13 @@
+description: Pin login fields
+required: true
+content:
+  application/x-www-form-urlencoded:
+    schema:
+      type: object
+      properties:
+        email:
+          type: string
+          example: jane@example.com
+        pin:
+          type: integer
+          example: 1234

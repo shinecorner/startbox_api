@@ -1,0 +1,8 @@
+description: Create support ticket
+tags:
+  - Support
+requestBody:
+  $ref: ../../index.yaml#/components/requestBodies/Support
+responses:
+  200:
+    $ref: ../../index.yaml#/components/responses/Success

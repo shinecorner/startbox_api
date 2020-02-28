@@ -1,0 +1,21 @@
+description: List of procedures with details for today
+tags:
+  - Today
+parameters:
+  - $ref: ../../../index.yaml#/components/parameters/Term
+  - $ref: ../../../index.yaml#/components/parameters/Page
+  - $ref: ../../../index.yaml#/components/parameters/PerPage
+  - name: filter
+    in: query
+    required: false
+    description: The select filter options
+    schema:
+      type: string
+      enum: [scheduled,completed]
+responses:
+  200:
+    description: OK
+    content:
+      application/json:
+        schema:
+          $ref: ../../../index.yaml#/components/schemas/ProcedureList

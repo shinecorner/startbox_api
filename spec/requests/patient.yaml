@@ -1,0 +1,27 @@
+description: Patient fields
+required: true
+content:
+  application/x-www-form-urlencoded:
+    schema:
+      type: object
+      properties:
+        first_name:
+          type: string
+          minLength: 3
+          maxLength: 20
+          example: 'Jane'
+        last_name:
+          type: string
+          minLength: 3
+          maxLength: 20
+          example: 'Doe'
+        dob:
+          type: string
+          example: '10/12/1988'
+        sex:
+          type: string
+          example: male
+          enum: [male,female,other]
+        dod_identifier:
+          type: integer
+          example: 123456789

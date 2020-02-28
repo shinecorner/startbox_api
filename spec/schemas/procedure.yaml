@@ -1,0 +1,45 @@
+type: object
+properties:
+  id:
+    type: integer
+    format: int64
+    example: 1
+  title:
+    type: string
+    example: 'A procedure title'
+  description:
+    type: string
+    example: 'A procedure description'
+  laterality:
+    type: integer
+    enum: [0,1,2]
+    example: 0
+  script:
+    type: string
+    example: 'I am the script'
+  patient:
+    $ref: ./patient.yaml
+  provider:
+    $ref: ./provider.yaml
+  recording:
+    $ref: ./recording.yaml
+  completed_at:
+    type: string
+    format: date-time
+    example: '2020-03-02 00:00:00'
+  scheduled_at:
+    type: string
+    format: date-time
+    example: '2020-03-02 00:00:00'
+  canceled_at:
+    type: string
+    format: date-time
+    example: null
+  archived_at:
+    type: string
+    format: date-time
+    example: null
+  created_at:
+    type: string
+    format: date-time
+    example: '2020-02-02 00:00:00'

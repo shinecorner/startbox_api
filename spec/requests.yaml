@@ -1,0 +1,22 @@
+Login:
+  $ref: ./requests/login.yaml
+Pin:
+  $ref: ./requests/pin.yaml
+PinLogin:
+  $ref: ./requests/pin-login.yaml
+NoGo:
+  $ref: ./requests/no-go.yaml
+Patient:
+  $ref: ./requests/patient.yaml
+Procedure:
+  $ref: ./requests/procedure.yaml
+ProcedureStatus:
+  $ref: ./requests/procedure-status.yaml
+Recording:
+  $ref: ./requests/recording.yaml
+ScanPair:
+  $ref: ./requests/scan-pair.yaml
+UserSettings:
+  $ref: ./requests/user-settings.yaml
+Support:
+  $ref: ./requests/support.yaml

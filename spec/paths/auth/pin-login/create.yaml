@@ -1,0 +1,21 @@
+description: Authenticate the client app user
+tags:
+  - Auth
+requestBody:
+  $ref: ../../../index.yaml#/components/requestBodies/PinLogin
+security: []
+responses:
+  200:
+    description: OK
+    content:
+      application/json:
+        schema:
+          properties:
+            data:
+              type: object
+              properties:
+                token:
+                  type: string
+                  example: bCIE9BI9dAyjb5hjKNLh6W0WrYYPotGXHJIaItvhEGr52ZaG2bdS4svrAPvUe8A2QuDlMeTbtkhjLTv3
+                user:
+                  $ref: ../../../index.yaml#/components/schemas/User

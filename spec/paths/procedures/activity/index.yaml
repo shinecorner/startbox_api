@@ -1,0 +1,13 @@
+description: List a procedure's activity
+tags:
+  - Procedures
+parameters:
+  - $ref: ../../../index.yaml#/components/parameters/Id
+responses:
+  200:
+    description: OK
+    content:
+      application/json:
+        schema:
+          $ref: '../../../index.yaml#/components/schemas/ActivityList'
+

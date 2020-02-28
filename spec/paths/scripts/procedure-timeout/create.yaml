@@ -1,0 +1,15 @@
+description: Create procedure timeout script
+tags:
+  - Scripts
+parameters:
+  - $ref: ../../../parameters/patient.yaml
+responses:
+  200:
+    description: A script object
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            data:
+              $ref: ../../../index.yaml#/components/schemas/Script

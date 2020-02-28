@@ -1,0 +1,12 @@
+description: Get user info
+tags:
+  - User
+responses:
+  200:
+    description: A User object
+    content:
+      application/json:
+        schema:
+          properties:
+            data:
+              $ref: ../../index.yaml#/components/schemas/User

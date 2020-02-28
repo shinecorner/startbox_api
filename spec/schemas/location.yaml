@@ -1,0 +1,13 @@
+type: object
+properties:
+  id:
+    type: integer
+    format: int64
+    example: 1
+  title:
+    type: string
+    example: 'Location 1'
+  created_at:
+    type: string
+    format: date-time
+    example: '2020-02-02 00:00:00'

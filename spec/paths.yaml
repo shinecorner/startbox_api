@@ -1,0 +1,197 @@
+# -------------------------------------------------
+# Auth
+# -------------------------------------------------
+
+/auth/login:
+  post:
+    $ref: './paths/auth/login/create.yaml'
+
+/auth/password/email:
+  post:
+    $ref: './paths/auth/password/email.yaml'
+
+/auth/password/reset:
+  post:
+    $ref: './paths/auth/password/reset.yaml'
+
+/auth/pin-login:
+  post:
+    $ref: './paths/auth/pin-login/create.yaml'
+
+/auth/pin:
+  post:
+    $ref: './paths/auth/pin/create.yaml'
+
+# -------------------------------------------------
+# User
+# -------------------------------------------------
+
+/current-user:
+  get:
+    $ref: ./paths/current-user/show.yaml
+
+
+# -------------------------------------------------
+# User Settings
+# -------------------------------------------------
+/settings:
+  put:
+    $ref: ./paths/settings/update.yaml
+
+/settings/password:
+  put:
+    $ref: './paths/settings/password/update.yaml'
+
+# -------------------------------------------------
+# Organizations
+# -------------------------------------------------
+
+/facilities:
+  get:
+    $ref: ./paths/organizations/facilities/index.yaml
+
+/facilities/{id}/locations:
+  get:
+    $ref: ./paths/organizations/locations/index.yaml
+
+# -------------------------------------------------
+# Today
+# -------------------------------------------------
+
+/today/patients:
+  get:
+    $ref: ./paths/today/patients/index.yaml
+
+/today/procedures:
+  get:
+    $ref: ./paths/today/procedures/index.yaml
+
+# -------------------------------------------------
+# Patients
+# -------------------------------------------------
+
+/patients:
+  get:
+    $ref: ./paths/patients/index.yaml
+  post:
+    $ref: ./paths/patients/create.yaml
+
+/patients/{id}:
+  put:
+    $ref: ./paths/patients/update.yaml
+
+/patients/{id}/activity:
+  get:
+    $ref: ./paths/patients/activity/index.yaml
+
+/patients/{id}/locations:
+  get:
+    $ref: ./paths/patients/locations/index.yaml
+
+/patients/{id}/providers:
+  get:
+    $ref: ./paths/patients/providers/index.yaml
+
+/patient-scans:
+  post:
+    $ref: ./paths/patients/scan/create.yaml
+
+# -------------------------------------------------
+# Procedures
+# -------------------------------------------------
+
+/procedures:
+  get:
+    $ref: ./paths/procedures/index.yaml
+  post:
+    $ref: ./paths/procedures/create.yaml
+
+/procedures/{id}:
+  put:
+    $ref: ./paths/procedures/update.yaml
+
+/procedures/{id}/archive:
+  post:
+    $ref: ./paths/procedures/archive/create.yaml
+  delete:
+    $ref: ./paths/procedures/archive/destroy.yaml
+
+/procedure-statuses:
+  get:
+    $ref: ./paths/procedures/statuses/index.yaml
+
+/procedures/{id}/activity:
+  get:
+    $ref: ./paths/procedures/activity/index.yaml
+
+/procedures/{id}/recordings:
+  post:
+    $ref: ./paths/procedures/recordings/create.yaml
+
+/procedures/{id}/statuses:
+  post:
+    $ref: ./paths/procedures/statuses/create.yaml
+
+/procedures/{id}/signouts:
+  post:
+    $ref: ./paths/procedures/signouts/create.yaml
+
+/procedures/{id}/timeouts:
+  post:
+    $ref: ./paths/procedures/timeouts/create.yaml
+
+# -------------------------------------------------
+# No-gos
+# -------------------------------------------------
+
+/no-gos:
+  post:
+    $ref: ./paths/no-gos/create.yaml
+
+/no-gos/{id}:
+  put:
+    $ref: ./paths/no-gos/update.yaml
+
+# -------------------------------------------------
+# Scan / Pair
+# -------------------------------------------------
+
+/procedures/{id}/kit:
+  post:
+    $ref: ./paths/scan-pair/kit/create.yaml
+  delete:
+    $ref: ./paths/scan-pair/kit/destroy.yaml
+
+/procedures/{id}/band:
+  post:
+    $ref: ./paths/scan-pair/armband/create.yaml
+  delete:
+    $ref: ./paths/scan-pair/armband/destroy.yaml
+
+# -------------------------------------------------
+# Scripts
+# -------------------------------------------------
+
+/scripts/procedure-decision:
+  get:
+    $ref: ./paths/scripts/procedure-decision/create.yaml
+
+/scripts/procedure-timeout:
+  get:
+    $ref: ./paths/scripts/procedure-timeout/create.yaml
+
+# -------------------------------------------------
+# Training
+# -------------------------------------------------
+
+/training/resources:
+  get:
+    $ref: ./paths/training/resources/index.yaml
+
+# -------------------------------------------------
+# Support
+# -------------------------------------------------
+
+/support:
+  post:
+    $ref: ./paths/support/create.yaml

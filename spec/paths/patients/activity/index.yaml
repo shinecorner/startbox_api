@@ -1,0 +1,12 @@
+description: Get list of patient activity
+tags:
+  - Patients
+parameters:
+  - $ref: ../../../index.yaml#/components/parameters/Id
+responses:
+  200:
+    description: OK
+    content:
+      application/json:
+        schema:
+          $ref: '../../../index.yaml#/components/schemas/ActivityList'

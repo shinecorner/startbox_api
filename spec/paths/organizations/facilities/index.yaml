@@ -1,0 +1,13 @@
+description: Get facilities list
+tags:
+  - Organizations
+parameters:
+  - $ref: ../../../index.yaml#/components/parameters/Page
+  - $ref: ../../../index.yaml#/components/parameters/PerPage
+responses:
+  200:
+    description: OK
+    content:
+      application/json:
+        schema:
+          $ref: '../../../index.yaml#/components/schemas/FacilityList'

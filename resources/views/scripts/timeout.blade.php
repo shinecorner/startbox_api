@@ -1,0 +1,1 @@
+Lorem {{ $procedure->patient->full_name }} ipsum

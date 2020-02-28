@@ -1,0 +1,12 @@
+Id:
+  $ref: ./parameters/id.yaml
+Limit:
+  $ref: ./parameters/limit.yaml
+Page:
+  $ref: ./parameters/page.yaml
+Patient:
+  $ref: ./parameters/patient.yaml
+PerPage:
+  $ref: ./parameters/per_page.yaml
+Term:
+  $ref: ./parameters/term.yaml

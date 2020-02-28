@@ -1,0 +1,19 @@
+type: object
+properties:
+  id:
+    type: integer
+    format: int64
+    example: 1
+  reason:
+    type: string
+    example: laterality
+    enum: [patient,procedure,site,laterality]
+  note:
+    type: string
+    example: Wrong laterality
+  creator:
+    $ref: ./user.yaml
+  created_at:
+    type: string
+    format: date-time
+    example: '2020-02-02 00:00:00'

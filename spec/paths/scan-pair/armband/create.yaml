@@ -1,0 +1,17 @@
+description: Create armband pairing
+tags:
+  - Scan / Pair
+parameters:
+  - $ref: ../../../index.yaml#/components/parameters/Id
+requestBody:
+  $ref: ../../../index.yaml#/components/requestBodies/ScanPair
+responses:
+  200:
+    description: A scan pair object
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            data:
+              $ref: ../../../index.yaml#/components/schemas/ScanPair

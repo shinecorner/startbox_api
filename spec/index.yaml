@@ -1,0 +1,28 @@
+openapi: '3.0.1'
+
+info:
+  version: '1.0.0'
+  title: 'Startbox'
+
+servers:
+  - url: https://api.startboxor.com/v1
+    description: Production
+
+paths:
+  $ref: ./paths.yaml
+
+components:
+  schemas:
+    $ref: ./schemas.yaml
+  parameters:
+    $ref: ./parameters.yaml
+  responses:
+    $ref: ./responses.yaml
+  requestBodies:
+    $ref: ./requests.yaml
+  securitySchemes:
+      bearerAuth:
+        type: http
+        scheme: bearer
+security:
+  - bearerAuth: []

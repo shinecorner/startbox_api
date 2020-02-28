@@ -1,0 +1,15 @@
+description: Create a patient
+tags:
+  - Patients
+requestBody:
+  $ref: ../../index.yaml#/components/requestBodies/Patient
+responses:
+  200:
+    description: A patient object
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            data:
+              $ref: ../../index.yaml#/components/schemas/Patient

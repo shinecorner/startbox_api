@@ -1,0 +1,6 @@
+description: List training resources
+tags:
+  - Training
+responses:
+  200:
+    $ref: ../../../index.yaml#/components/responses/Success

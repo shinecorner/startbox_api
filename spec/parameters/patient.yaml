@@ -1,0 +1,7 @@
+name: patient_id
+in: query
+required: false
+description: 'The patient id'
+example: 1
+schema:
+  type: integer

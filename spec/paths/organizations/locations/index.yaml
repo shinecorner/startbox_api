@@ -1,0 +1,14 @@
+description: Get location list
+tags:
+  - Organizations
+parameters:
+  - $ref: ../../../index.yaml#/components/parameters/Id
+  - $ref: ../../../index.yaml#/components/parameters/Page
+  - $ref: ../../../index.yaml#/components/parameters/PerPage
+responses:
+  200:
+    description: OK
+    content:
+      application/json:
+        schema:
+          $ref: '../../../index.yaml#/components/schemas/LocationList'

@@ -1,0 +1,17 @@
+description: No-go fields
+required: true
+content:
+  application/x-www-form-urlencoded:
+    schema:
+      type: object
+      properties:
+        procedure_id:
+          type: integer
+          example: 1
+        reason:
+          type: string
+          example: laterality
+          enum: [patient,procedure,site,laterality]
+        note:
+          type: string
+          example: Wrong laterality
